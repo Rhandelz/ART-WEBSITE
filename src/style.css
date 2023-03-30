@@ -12,6 +12,11 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   /*   overflow: hidden; */
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .head-line {
@@ -35,7 +40,7 @@ body {
 .vid-bck > h1 {
   font-size: 5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background: url("/background/gifgif.gif");
+  background: url("../background/gifgif.gif");
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 5px;
@@ -160,7 +165,6 @@ body {
   box-shadow: 1px 1px 5px rgb(128, 128, 128);
   transition: 0.5s;
   z-index: 0;
-  margin-bottom: 20px;
 }
 .nav_head:hover {
   box-shadow: none;
@@ -346,8 +350,8 @@ li a {
 
 /* 1st section*/
 .a_sec {
-  /*   background-color: #0000003b; */
-  height: 77vh;
+  /* background-color: #0000003b; */
+  height: 75vh;
   position: relative;
   width: 100%;
   display: flex;
@@ -366,7 +370,7 @@ li a {
 
 .art {
   /* background-color: #191f927b; */
-  height: 100%;
+  height: 95%;
   width: 50%;
   display: flex;
   justify-content: center;
@@ -587,9 +591,9 @@ li a {
 /*INFO ABOUT*/
 
 .info_abt {
-  /*  background-color: #202b3772; */
+  /* background-color: #202b3772; */
   width: 50%;
-  height: 100%;
+  height: 95%;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -601,6 +605,8 @@ li a {
   /* background-color: #6c757d; */
   text-align: right;
   padding-top: 50px;
+  /* background-color: #285aeb; */
+  position: relative;
 }
 
 .info_abt > div > h1,
@@ -645,8 +651,10 @@ h2 {
 
 .info_abt > div > ul {
   /* background-color: blueviolet; */
+  position: absolute;
   margin-left: 25%;
   margin-top: 5%;
+  right: 0;
   width: 50%;
   text-align: right;
 }
@@ -655,7 +663,7 @@ h2 {
   font-weight: 900;
   letter-spacing: 2px;
   word-spacing: 5px;
-  font-size: 20px;
+  font-size: 15px;
   list-style: none;
   color: #232527;
 }
