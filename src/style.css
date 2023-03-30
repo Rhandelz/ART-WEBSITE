@@ -42,7 +42,8 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background: url("../background/gifgif.gif");
   -webkit-background-clip: text;
-  color: transparent;
+  /*  color: transparent; */
+  color: white;
   letter-spacing: 5px;
   word-spacing: 4px;
   position: relative;
