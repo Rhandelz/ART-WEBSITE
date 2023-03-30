@@ -65,15 +65,15 @@ plus.addEventListener("click", (e) => {
     plus.innerText = "+";
     left.style.transform = "scale(0)";
     right.style.transform = "scale(0)";
-    right.style.right = "0%";
-    left.style.left = "0%";
+    /* right.style.right = "0%";
+    left.style.left = "0%"; */
   } else {
     art.style.height = "80%";
     plus.innerText = "-";
     left.style.transform = "  scale(1.1) scale(1) ";
     right.style.transform = "scale(1.1) scale(1)";
-    right.style.right = "-25%";
-    left.style.left = "-25%";
+    /*  right.style.right = "-25%";
+    left.style.left = "-25%"; */
   }
 });
 /*NEXTING*/
