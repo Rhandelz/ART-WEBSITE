@@ -9,6 +9,9 @@ let transition_orig =
   " scaleX(1) scaleX(1.5) scaleX(2.5) scaleX(2.5) scaleX(1.5) scaleX(1)  scaleX(0)";
 let transform = "scaleY(0.8) scaleY(0.6) scaleY(0.2) scaleY(0)";
 
+let info = document.querySelector(".info_abt");
+let arrrrr = document.querySelector(".art");
+console.log("hweigth of" + info.clientHeight + " " + arrrrr.clientHeight);
 btn.addEventListener("click", (event) => {
   /* main.style.display = "none"; */
   one.style.transform = transition_orig;
@@ -68,7 +71,7 @@ plus.addEventListener("click", (e) => {
     /* right.style.right = "0%";
     left.style.left = "0%"; */
   } else {
-    art.style.height = "80%";
+    art.style.height = "440px";
     plus.innerText = "-";
     left.style.transform = "  scale(1.1) scale(1) ";
     right.style.transform = "scale(1.1) scale(1)";
@@ -99,12 +102,13 @@ left.addEventListener("click", (e) => {
   if (arrnum >= con_art.length - 1) {
     concon.style.transform = "translateX(0px)";
     arrnum = 0;
+    console.log("heith " + concon.clientHeight);
   } else {
     arrnum++;
     concon.style.transform = "translateX(" + -320 * arrnum + "px)";
-    console.log("R" + -320 * arrnum);
+    /* console.log("R" + -320 * arrnum);
     console.log(con_art.length);
-    console.log(arrnum);
+    console.log(arrnum); */
   }
 });
 

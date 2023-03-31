@@ -672,7 +672,7 @@ h2 {
 
 /*MEDIA QUERIES*/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   body {
     display: flex;
     justify-content: center;
@@ -717,15 +717,12 @@ h2 {
 
   .a_sec {
     flex-direction: column;
-    height: 135vh;
-    /*  background-color: #285aeb; */
-    overflow: hidden;
+    height: 175vh;
   }
 
   .a_sec > .art {
-    /*  background-color: #285aeb; */
     width: 100%;
-    height: 100%;
+    height: 600px;
     /*  background-color: #285aeb; */
   }
   .art > div > .left {
@@ -753,5 +750,9 @@ h2 {
 
   .info_abt > div > ul {
     position: relative;
+  }
+
+  .contain_art {
+    min-height: 400px;
   }
 }
